@@ -10,7 +10,7 @@ description: |
  today with our new Brave Payments system.
 confinement: strict
 compression: lzo
-base: core24
+base: core22
 apps:
   brave:
     command: opt/brave.com/brave/brave-browser
@@ -110,7 +110,7 @@ parts:
     override-prime: |
       set -eux
       mkdir -p usr/bin
-      cp /snap/core24/current/usr/bin/xdg-open usr/bin
+      cp /snap/core22/current/usr/bin/xdg-open usr/bin
       cd usr/bin
       ln -s xdg-open xdg-email
 
